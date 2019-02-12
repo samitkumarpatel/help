@@ -147,4 +147,9 @@ uname -a
 and
 cat /etc/os-release
 ```
-
+### networking
+```
+nslookup <<hostname>>
+netstat -tunlp
+lsof -i
+```
