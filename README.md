@@ -1,2 +1,2 @@
-# knowledge_base
+# knowledge-base
 ref knowledge for me, which can help other as well
