@@ -1,3 +1,55 @@
+### system/kernel version
+```
+uname -a
+uname -v
+uname -r
+```
+### System Current IP address
+```
+ifconfig
+ip addr show
+ip addr show eth0
+```
+
+### free disk space
+```
+df -ah
+```
+
+### check size of the directory
+```
+du -sh /dir/path
+```
+
+### check open port in unix
+```
+netstat
+netstat -tunlp
+sudo netstat -tulp
+0.0.0.0:PORT - open port for all
+127.0.1.1:PORT - local ip, not available outside machine 
+```
+### cpu usage for given process
+```
+ps aux | grep nginx
+```
+
+### mount a drive or check mount status
+```
+ls /mnt
+mount /dev/sd2 /mnt
+mount
+less /etc/fstab
+```
+
+### command help
+```
+man <command>
+man touch
+man mkdir
+man watch
+```
+
 ### Application Environment Setup Using /etc/profile.d/*
 ```
 When a user logs in, environment variables are set from various places.  That includes /etc/profile (for all users).
@@ -48,8 +100,6 @@ and it has - owner-rwx, group- rx, other -rx
 > Write (2)
 
 > Execute (1)
-
-
 
 
 ### pid ###
