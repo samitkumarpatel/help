@@ -17,3 +17,6 @@
 * click on ` IntelliJ IDEA GDSL` - copy that content
 * place pipeline.gdsl somewhere in src folder in your project so that it’s recognized properly
 * add pipeline.gdsl to .gitignore to reduce noise in the repo
+If the autocompletion does not work, follow steps
+*Creating a folder /src/main/groovy, putting the file in there and marking it as a sources root (right click on the folder -> Mark directory as -> Sources Root) did the trick.
+* File > New > Project from Existing Sources…), a message popped up: DSL descriptor file has been change and isn’t currently executed.
