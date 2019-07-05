@@ -35,7 +35,7 @@ make sure you have correct settings.xml file with all necessary details like
   </servers>
 </settings>
 ```
-### download the package into specific output directory
+### After Download, if you want to copy that to a specific output directory use this
 ```
-mvn -s ~/.m2/settings.xml dependency:get -DremoteRepositories=http://my.nexus.net:10001/repository/maven-hosted-snapshots -DgroupId=com.my.project -DartifactId=my-project -Dversion=0.0.1-SNAPSHOT -Dtransitive=false -Dpackaging=war -DoutputDirectory=/path/to/dir
+mvn dependency:copy -Dartifact=com.maersk.gms:gms-archival:0.0.1-SNAPSHOT:war -DoutputDirectory=/home/spa349/Downloads/
 ```
