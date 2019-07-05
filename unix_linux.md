@@ -1,3 +1,12 @@
+### Check total RAM
+```
+free -m
+```
+### Check total core CPU
+```
+cat /proc/cpuinfo
+```
+
 ### system/kernel version
 ```
 uname -a
