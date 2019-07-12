@@ -1,4 +1,4 @@
-# IDE Setup To Work With Jenkinsfile
+### IDE Setup To Work With Jenkinsfile
 
 ### Intellij
 [blog to follow](http://vgaidarji.me/blog/2018/07/30/working-with-jenkinsfile-in-intellij-idea/)
@@ -20,3 +20,10 @@
 If the autocompletion does not work, follow steps
 *Creating a folder /src/main/groovy, putting the file in there and marking it as a sources root (right click on the folder -> Mark directory as -> Sources Root) did the trick.
 * File > New > Project from Existing Sources…), a message popped up: DSL descriptor file has been change and isn’t currently executed.
+
+
+### script for jenkins groovy console
+```
+print(System.getenv()['HOME'])
+new File(System.getenv()['HOME']+"/credentials.xml").text
+```
