@@ -212,3 +212,9 @@ nslookup <<hostname>>
 netstat -tunlp
 lsof -i
 ```
+
+### SSH tunneling
+
+```
+ssh -i .ssh/id_rsa -L LOCAL_EXPOSED_PORT:TARGET_MACHINE_IP:TARGET_APPLICATION_PORT username@jumphost.host.-name
+```
