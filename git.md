@@ -1,6 +1,6 @@
 # Git Cheat Sheet
 
-## git config
+## git config (for debug)
 ```
 git config --global -l
 git config --system -l
