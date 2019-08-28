@@ -1,5 +1,11 @@
 # Git Cheat Sheet
 
+## git config
+```
+git config --global -l
+git config --system -l
+```
+
 ## Initial Setup
 
 
