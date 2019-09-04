@@ -4,11 +4,17 @@
 
 ```
 Openssl
-Install openssl package for your operating system from here
+Install openssl package for your operating system. In google search you can find your expected installation command.
 
 Generating a private key: openssl genrsa 2048 > private.pem
 
 Generating the self signed certificate: openssl req -x509 -new -key private.pem -out public.pem
 
 If required, creating PFX: openssl pkcs12 -export -in public.pem -inkey private.pem -out mycert.pfx
+```
+
+### Generate ssl ceritifcate to be used in mvn or other java related activity
+
+```
+keytool -import -file maerskdev_cert.cer -keystore maven-keystore
 ```
