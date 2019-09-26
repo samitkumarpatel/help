@@ -1,3 +1,11 @@
+### manual for unix command
+```
+man <command>
+man touch
+man mkdir
+man watch
+```
+
 ### Check total RAM
 ```
 free -m
@@ -49,14 +57,6 @@ ls /mnt
 mount /dev/sd2 /mnt
 mount
 less /etc/fstab
-```
-
-### command help
-```
-man <command>
-man touch
-man mkdir
-man watch
 ```
 
 ### Application Environment Setup Using /etc/profile.d/*
