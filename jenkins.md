@@ -1,4 +1,7 @@
 # Jenkins Tips and Trick
+- Automation
+[click](https://github.com/samitkumarpatel/cicd-tools/tree/master/jenkins.v1) To get an idea around Jenkins Automation
+
 [click](https://wiki.jenkins.io/display/JENKINS/Jenkins+Script+Console) to get an in-details idea for jenkjns groovy script 
 
 - Get Environment variable details
@@ -43,3 +46,7 @@ If the autocompletion does not work, follow steps
 *Creating a folder /src/main/groovy, putting the file in there and marking it as a sources root (right click on the folder -> Mark directory as -> Sources Root) did the trick.
 * File > New > Project from Existing Sources…), a message popped up: DSL descriptor file has been change and isn’t currently executed.
 
+### To Get Slave Secret, Below is the curl command
+```
+curl -L -s -u USERNAME:PASSWORD -H "Jenkins-Crumb:dac7ce5614f8cb32a6ce75153aaf2398" -X GET http://HOST:PORT/computer/SLAVENAME/slave-agent.jnlp | sed "s/.*<application-desc main-class=\"hudson.remoting.jnlp.Main\"><argument>\([a-z0-9]*\).*/\1/"
+```
