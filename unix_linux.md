@@ -1,3 +1,10 @@
+### OS version
+```
+cat /etc/os-release
+lsb_release 
+```
+Note - To Know more about lsb_release [click](https://refspecs.linuxfoundation.org/LSB_3.0.0/LSB-PDA/LSB-PDA/lsbrelease.html) here
+
 ### manual for unix command
 ```
 man <command>
