@@ -1,4 +1,4 @@
-### OS version
+### OS version or Distributions Details
 ```
 cat /etc/os-release
 lsb_release 
