@@ -3,7 +3,8 @@
 Application Gateway
 ---------------------
 Backend pools - configure backend vm ip
-HTTP settings - configure all the exposed port from backend vm
+Health Probs - create a health check url (the url has to give some status code inbetween 200-399)
+HTTP settings - configure all the exposed port from backend vm and add Health Probs If needed
 Frontend Ip Configuration - configure DNS/Public IP
 Listners - configure http(80) or https (443) listeners and add pfx ssl cert
 Rules - connect listeners —BackendPools—HttpSettings or setup any redirection rules
