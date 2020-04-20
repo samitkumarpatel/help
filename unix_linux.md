@@ -13,11 +13,11 @@ man mkdir
 man watch
 ```
 
-### Check total RAM
+### RAM
 ```
 free -m
 ```
-### Check total core CPU
+### CPU
 ```
 cat /proc/cpuinfo
 ```
