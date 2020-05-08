@@ -3,7 +3,7 @@
 cat /etc/os-release
 lsb_release 
 ```
-Note - To Know more about lsb_release [click](https://refspecs.linuxfoundation.org/LSB_3.0.0/LSB-PDA/LSB-PDA/lsbrelease.html) here
+> To Know more about lsb_release [click](https://refspecs.linuxfoundation.org/LSB_3.0.0/LSB-PDA/LSB-PDA/lsbrelease.html) here
 
 ### manual for unix command
 ```
@@ -14,10 +14,12 @@ man watch
 ```
 
 ### RAM
+- To Get memory info
 ```
 free -m
 ```
 ### CPU
+- To get cpu info
 ```
 cat /proc/cpuinfo
 ```
@@ -50,8 +52,9 @@ du -sh /dir/path
 netstat
 netstat -tunlp
 sudo netstat -tulp
-0.0.0.0:PORT - open port for all
-127.0.1.1:PORT - local ip, not available outside machine 
+
+# 0.0.0.0:PORT : It means Open port for all
+# 127.0.1.1:PORT : local ip, not available outside machine 
 ```
 ### cpu usage for given process
 ```
@@ -81,8 +84,10 @@ Then ~/.bash_profile, then ~/.bashrc.
 groups - will show all the attached groups
 groups <<userName>> - will show all the attached groups
 
-id -u  ----user id in hexa
-id -g ----user grp in haxa
+# user id in hexa
+id -u
+#  Group in haxa
+id -g
 ```
 ### sudo user
 ```
@@ -110,6 +115,12 @@ and it has - owner-rwx, group- rx, other -rx
 
 ```
 *chmod table
+
+|Action|Number|Other|
+|------|------|-----|
+|Read|4|-|
+|Write|2|-|
+|Execute|1|-|
 
 > Read (4)
 
