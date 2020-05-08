@@ -122,12 +122,6 @@ and it has - owner-rwx, group- rx, other -rx
 |Write|2|-|
 |Execute|1|-|
 
-> Read (4)
-
-> Write (2)
-
-> Execute (1)
-
 
 ### pid ###
 ````
@@ -142,7 +136,8 @@ the process file extensation is .pid
 
 ### search ###
  * grep --help
- * grep -r 'search string' . - will search the search string in the (.) dir or current directory
+ # will search the search string in the (.) dir or current directory
+ * grep -r 'search string' . 
  
 ### other ###
  * nc -zvv localhost 27017 -  ping from command line
