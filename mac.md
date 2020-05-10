@@ -1,6 +1,15 @@
-### zsh on mac terminal
-[click](https://ohmyz.sh/)
+## Chetsheet Mac Shortcuts
 
+**process id for a port**
 ```
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# will search the process id for port 8080
+lsof -n -i4TCP:8080
+
+# see all
+netstat -tulpn
+netstat -tulpn | grep 8080
+
+#Kill a process
+kill -9 processId
 ```
+
