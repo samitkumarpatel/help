@@ -2,6 +2,10 @@
 To create a AKS with Azure CLI, Use the below command
 
 ```sh
+az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+```
+
+```sh
 REGION_NAME=eastus
 RESOURCE_GROUP=aksworkshop
 SUBNET_NAME=aks-subnet
@@ -51,7 +55,7 @@ az aks create \
 ```
 
 **Connect to the cluster with az**
-```
+```sh
 az aks get-credentials \
     --resource-group $RESOURCE_GROUP \
     --name $AKS_CLUSTER_NAME
@@ -63,7 +67,7 @@ kubectl get nodes
 ```
 
 **Azutre Container Registry**
-```
+```sh
 az acr create \
     --resource-group $RESOURCE_GROUP \
     --location $REGION_NAME \
@@ -72,7 +76,7 @@ az acr create \
 ```
 
 **Build Docker Image with az cli**
-```
+```sh
 az acr build \
     --resource-group $RESOURCE_GROUP \
     --registry $ACR_NAME \
@@ -86,9 +90,10 @@ az acr repository list \
 
 **Connect ACR to AKS**
 
-```
+```sh
 az aks update \
     --name $AKS_CLUSTER_NAME \
     --resource-group $RESOURCE_GROUP \
     --attach-acr $ACR_NAME
 ```
+> Make sure the used SPN need to have Owner role . If you are running az and login with `az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID`
