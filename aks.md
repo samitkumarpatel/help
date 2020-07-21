@@ -61,3 +61,34 @@ az aks get-credentials \
 kubectl config get-contexts
 kubectl get nodes
 ```
+
+**Azutre Container Registry**
+```
+az acr create \
+    --resource-group $RESOURCE_GROUP \
+    --location $REGION_NAME \
+    --name $ACR_NAME \
+    --sku Standard
+```
+
+**Build Docker Image with az cli**
+```
+az acr build \
+    --resource-group $RESOURCE_GROUP \
+    --registry $ACR_NAME \
+    --image image_name:version .
+    
+# List all the images in table format
+az acr repository list \
+    --name $ACR_NAME \
+    --output table
+```
+
+**Connect ACR to AKS**
+
+```
+az aks update \
+    --name $AKS_CLUSTER_NAME \
+    --resource-group $RESOURCE_GROUP \
+    --attach-acr $ACR_NAME
+```
