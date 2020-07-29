@@ -39,3 +39,49 @@ make sure you have correct settings.xml file with all necessary details like
 ```
 mvn dependency:copy -Dartifact=com.maersk.gms:gms-archival:0.0.1-SNAPSHOT:war -DoutputDirectory=/home/spa349/Downloads/
 ```
+
+
+### Maven Tips and Trick around settings.xml
+
+```
+mvn --encrypt-master-password <any_password>
+ 
+ 
+----------------------
+security-settings.xml
+---------------------
+<settingsSecurity>
+  <master>{GENERATED_TEXT}</master>
+</settingsSecurity>
+ 
+mvn --encrypt-password <your_nexus_password>
+ 
+-------------
+settings.xml
+-------------
+ <?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <mirrors>
+        <mirror>
+            <id>my-nexus</id>
+            <mirrorOf>*</mirrorOf>
+            <name>Main mirror for all devops managed repositories</name>
+            <url>http://my.nexus.net:10001/repository/maven-group-public/</url>
+        </mirror>
+    </mirrors>
+    <servers>
+        <server>
+            <id>my-nexus</id>
+            <username>yourUsername</username>
+            <password>{ENCRYPTEDPASSWORD}</password>
+        </server>
+        .....
+    </servers>
+</settings>
+ 
+ 
+If the file are outside ~/.m2/ , use below command instead.
+ 
+mvn --batch-mode -s /path/to/settings.xml -Dsettings.security=/path/to/settings-security.xml clean install
+```
