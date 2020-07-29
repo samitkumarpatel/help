@@ -15,7 +15,7 @@ Client Authentication : Send As Basic Auth Header
 - Also For other Grant Type, you may need 
 
 ```
-AUTH Url  : https://login.microsoftonline.com/05d75c05-fa1a-42e7-9cf1-eb416c396f2d/oauth2/authorize
+AUTH Url  : https://login.microsoftonline.com/<TENANT_ID>/oauth2/authorize
 
-ACCESS Token Url  : https://login.microsoftonline.com/05d75c05-fa1a-42e7-9cf1-eb416c396f2d/oauth2/token
+ACCESS Token Url  : https://login.microsoftonline.com/<TENANT_ID>/oauth2/token
 ```
