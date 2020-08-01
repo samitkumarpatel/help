@@ -37,7 +37,7 @@ make sure you have correct settings.xml file with all necessary details like
 ```
 ### After Download, if you want to copy that to a specific output directory use this
 ```
-mvn dependency:copy -Dartifact=com.maersk.gms:gms-archival:0.0.1-SNAPSHOT:war -DoutputDirectory=/home/spa349/Downloads/
+mvn dependency:copy -Dartifact=com.artifact.net:artfactId:0.0.1-SNAPSHOT:war -DoutputDirectory=/home/samitkumarpatel/Downloads/
 ```
 
 
