@@ -8,7 +8,7 @@ jobs/template.yml
 ```yml
 - job-template:
     name: '{repo}'
-    description: 'Multibranch build for {repo-owner}/{repo} {essential|}'
+    description: 'Multibranch build for {repo-owner}/{repo}'
     project-type: multibranch
     prune-dead-branches: True
     number-to-keep: '10'
