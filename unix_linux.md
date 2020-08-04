@@ -231,3 +231,9 @@ lsof -i
 ```
 ssh -i .ssh/id_rsa -L LOCAL_EXPOSED_PORT:TARGET_MACHINE_IP:TARGET_APPLICATION_PORT username@jumphost.host.-name
 ```
+
+### crontab
+To see all the cron job use
+```
+crontab -l
+```
