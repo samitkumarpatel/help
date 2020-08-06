@@ -296,3 +296,16 @@ $ git config --global core.autocrlf true
 Once you're comfortable with what the above commands are doing, you might want to create some shortcuts for Git Bash. This allows you to work a lot faster by doing complex tasks in really short commands.
 
 Refer to my [.bashrc Gist](https://gist.github.com/jedmao/1deb357e54b3daf5856c#file-bashrc) for a good list of useful shortcuts.
+
+### Git tag 
+
+list all the tag which will match the wildcard character
+```sh
+git tag -l "*release*"
+```
+
+delete multiple tags with wildcard character
+```sh
+git push --delete origin $(git tag -l "*snapshot*")
+```
+
