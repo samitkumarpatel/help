@@ -1,5 +1,7 @@
 # jenkins
 
+click [here](https://www.jenkins.io/doc/) for more details on Jenkins
+
 ### Jenkins Job Builder
 
 jenkins job builder. [click](https://pypi.org/project/jenkins-job-builder/) for more details
