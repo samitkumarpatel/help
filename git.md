@@ -309,3 +309,49 @@ delete multiple tags with wildcard character
 git push --delete origin $(git tag -l "*snapshot*")
 ```
 
+### git credential store in docker image
+The target of this task will be: will build a docker image which will have the git username and password , so that it can be used in a jenkins(or someother CI) build .
+
+Dockerfile
+```
+FROM node:10-alpine3.11
+ARG extGitUsername
+ARG extGitPassword
+
+ENV GITHUB_USER=$extGitUsername \
+    GITHUB_PASSWORD=$extGitPassword
+
+RUN apk update && apk upgrade && apk add --no-cache git && apk add shadow && apk add curl \
+    && npm install -g grunt-cli --unsafe-perm=true \
+    && npm install -g grunt-parallel --unsafe-perm=true \
+    && npm install -g bower --unsafe-perm=true \
+    && mkdir -p /.config && chmod 777 /.config \
+    && mkdir -p /.cache && chmod 777 /.cache \
+    && mkdir -p /.local && chmod 777 /.local \
+    && adduser -u 2000 -D jenkins \
+    && groupmod -g 30058 jenkins
+
+WORKDIR .
+COPY gitstore_creds.sh .
+RUN chmod +x gitstore_creds.sh
+USER jenkins
+RUN ./gitstore_creds.sh
+
+```
+
+gitstore_creds.sh
+```sh
+#!/bin/sh
+git config --global credential.helper store
+git credential-store store << EOL
+protocol=https
+host=github.com
+username=${GITHUB_USER}
+password=${GITHUB_PASSWORD}
+EOL
+```
+
+command to create a docker file
+```sh
+docker build --build-arg extGitUsername=XXX --build-arg extGitPassword=XXX -t tagName:tagNumber .
+```
