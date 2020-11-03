@@ -355,3 +355,11 @@ command to create a docker file
 ```sh
 docker build --build-arg extGitUsername=XXX --build-arg extGitPassword=XXX -t tagName:tagNumber .
 ```
+
+### Edit Commit Author 
+
+[stack overflow](https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-one-specific-commit)
+
+```
+git commit --amend --author="Author Name <email@address.com>" --no-edit
+```
