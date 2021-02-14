@@ -26,14 +26,14 @@ output "configure" {
 
 Run the following to configure kubernetes client:
 
-$ mkdir -p ~/.kube/
-$ export AZURE_KEY_VAULT_NAME=${var.key_vault.name}
-$ sh ./scripts/helpers/read-secret-from-keyvault.sh "aks-kube-config" > ~/.kube/${var.aks.name}
-$ export KUBECONFIG=~/.kube/${var.aks.name}
+mkdir -p ~/.kube/
+export AZURE_KEY_VAULT_NAME=${var.key_vault.name}
+sh ./scripts/helpers/read-secret-from-keyvault.sh "aks-kube-config" > ~/.kube/${var.aks.name}
+export KUBECONFIG=~/.kube/${var.aks.name}
 
 Test configuration using kubectl:
 
-$ kubectl get nodes
+kubectl get nodes
 CONFIGURE
 }
 ```
