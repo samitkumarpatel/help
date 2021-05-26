@@ -1,6 +1,26 @@
 ## Docker
 Content to be filled!
 
+### Insecure Registry (ssl certificate error) Hack
+
+```
+Edit or create the file /etc/docker/daemon.json and add insecure-registries :
+
+{
+    "insecure-registries" : ["docker.squadwars.org:443"]
+}
+
+systemctl restart docker
+```
+or
+
+```
+first create a file - /etc/docker/daemon.json
+ openssl s_client -showcerts -connect [registry_address]:[registry_port] < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > /etc/docker/certs.d/[registry_address]/ca.crt
+ 
+ systemctl restart docker
+```
+
 ## Docker Compose
 Content to be filled!
 
