@@ -13,6 +13,14 @@ terraform apply -no-color -input=false infra_plan.out
 
 ```
 
+### Other sample command
+
+```
+terraform import module.moduleName.resourceName.resourceLocalName InstanceId
+# rename the state file reference name
+terraform state mv oldName newName
+```
+
 ### Important Links
 - [Terraform 0.12 migration lession learn](https://medium.com/oracledevs/lessons-learned-when-upgrading-to-terraform-0-12-6d894d3ab20e)
 - [Best Practice Terrafor Resource](https://www.terraform.io/docs/configuration/resources.html)
