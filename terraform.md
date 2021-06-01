@@ -37,3 +37,11 @@ kubectl get nodes
 CONFIGURE
 }
 ```
+
+
+### Terraform Import
+
+If you r just using the resouce - just find the `terraform import` command from the resource provider documentation
+
+if you are using a module the standard `terraform import resourceName.localName InstanceId` will not work . to make this work , you have to use the module name which will show with command `teraform plan` command . - it's describe quite well [here](https://devops.stackexchange.com/questions/11358/how-to-use-terraform-import-with-module/11375).
+
