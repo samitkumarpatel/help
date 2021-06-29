@@ -1,5 +1,15 @@
 ## Docker
-Content to be filled!
+command to clean or find dangling images
+```
+docker images --filter="dangling=true" --format "{{ .ID }}"
+
+docker rmi $(docker images --filter="dangling=true" --format "{{ .ID }}")
+
+docker image prune
+
+```
+
+
 
 ### Insecure Registry (ssl certificate error) Hack
 
@@ -20,6 +30,9 @@ first create a file - /etc/docker/daemon.json
  
  systemctl restart docker
 ```
+
+
+
 
 ## Docker Compose
 Content to be filled!
