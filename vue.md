@@ -41,3 +41,23 @@
 
 </script>
 ```
+
+# execute Hello.vue
+
+** Hello.Vue
+```
+<template>
+  ...
+</template>
+<style scoped>
+  ...
+</style>
+<script>
+  ...
+</script>
+```
+- Install Vue CLI
+- run
+```
+vue serve Hello.vue
+```
