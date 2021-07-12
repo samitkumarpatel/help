@@ -2,10 +2,11 @@
 
 ```
 <html>
-   ...
-   <button-counter v-bind="extValue"></button-counter>
-   ...
-   
+   <div id="app">
+    ...
+    <button-counter v-bind="extValue"></button-counter>
+    ...
+   <div>
    <template id="template-1">
       <button v-on:click="count++">You clicked mee {{ count }} times. {{extValue}}</button>
    </template>
@@ -21,6 +22,21 @@
           }
       },
       template: '#template-1'
+    })
+    
+    var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello World'
+        },
+        methods: {
+          init: function() {
+             ....
+          }
+        },
+        created: function() {
+          this.init()
+        }
     })
 
 </script>
