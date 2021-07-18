@@ -3,7 +3,7 @@
 Shortcut kays to map os based keys setting  
 
 ```
-iOss- fn+i
+i Os- fn+i
 Mac Os- fn+o
-Windows- fn+p
+Windows Os- fn+p
 ```
