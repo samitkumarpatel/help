@@ -104,3 +104,9 @@ const app = new Vue({
 
   </div>
 ```
+
+# call parent method from vue component
+```
+   this.$parent.init()
+```
+or follow [stackoverflow](https://stackoverflow.com/questions/46208610/call-parent-method-with-component/46210210)  
