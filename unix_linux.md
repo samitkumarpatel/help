@@ -225,6 +225,25 @@ nslookup <<hostname>>
 netstat -tunlp
 lsof -i
 ```
+### ssh key pair
+- To generate a ssh key pair on your ~/.ssh folder
+```
+ssh-keygen
+```
+- To Generate a ssh key pair in other folder
+```
+cd /folder/to/generate/ssh-key-pair
+ssh-keygen -f id_rsa
+```
+- Validate the finger prints 
+```
+ssh-keygen -l -f id_rsa
+```
+- Generate a new public key from a private key
+
+```
+ssh-keygen -y -f id_rsa > api2.pub
+```
 
 ### SSH tunneling
 
