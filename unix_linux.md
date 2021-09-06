@@ -235,14 +235,14 @@ ssh-keygen
 cd /folder/to/generate/ssh-key-pair
 ssh-keygen -f id_rsa
 ```
+- Generate a new public key from a private key
+```
+ssh-keygen -y -f id_rsa > api2.pub
+```
 - Validate the finger prints 
 ```
 ssh-keygen -l -f id_rsa
-```
-- Generate a new public key from a private key
-
-```
-ssh-keygen -y -f id_rsa > api2.pub
+ssh-keygen -l -f id_rsa -f api2.pub
 ```
 
 ### SSH tunneling
