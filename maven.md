@@ -85,3 +85,11 @@ If the file are outside ~/.m2/ , use below command instead.
  
 mvn --batch-mode -s /path/to/settings.xml -Dsettings.security=/path/to/settings-security.xml clean install
 ```
+
+### Versioning
+mvn build-helper:parse-version versions:set@major
+mvn build-helper:parse-version versions:set@minor
+mvn build-helper:parse-version versions:set@patch
+mvn versions:set -DnewVersion=1.0.3-SNAPSHOT
+
+
