@@ -87,6 +87,8 @@ mvn --batch-mode -s /path/to/settings.xml -Dsettings.security=/path/to/settings-
 ```
 
 ### Versioning
+
+```
 mvn build-helper:parse-version versions:set@major
 
 mvn build-helper:parse-version versions:set@minor
@@ -94,5 +96,31 @@ mvn build-helper:parse-version versions:set@minor
 mvn build-helper:parse-version versions:set@patch
 
 mvn versions:set -DnewVersion=1.0.3-SNAPSHOT
+```
+### Read System property from command line and make use of it in the Java application
 
+```
+Command Line
+-------------
+mvn goal -DNAME=samit
 
+pom.xml
+----------------
+<plugin>
+   <groupId>org.apache.maven.plugins</groupId>
+   <artifactId>maven-surefire-plugin</artifactId>
+   <configuration>
+      <systemPropertyVariables>
+         <NAME>amit</NAME>
+      </systemPropertyVariables>
+   </configuration>
+</plugin>
+
+Test Class
+-----------
+@Test
+public void test() {
+   assertEquals("SAMIT", System.getProperty("NAME"));
+
+}
+```
