@@ -265,3 +265,9 @@ To see all the cron job use
 ```
 crontab -l
 ```
+### List all the Listen port
+```
+sudo lsof -i -P -n | grep LISTEN
+#if you want to kill a port
+sudo kill -9 <port>
+```
