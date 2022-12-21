@@ -1,0 +1,24 @@
+- [abc] A single character of a, b or c
+- [a-z] A Single character in a range: a to z
+- a|b Match either a or b
+- | Either or
+- \d A digit: [0-9]
+- \D Not a Digit 
+- \w A word character [a-zA-Z0-9]
+- \W Not a word character
+- \s Whitespace (space, tab, newline)
+- \S Not whitespace (space, tab, newline)
+- \b Word boundry
+- \B Not a word boundry
+- . Any single character
+- a{3} Exactly 3 of a: aaa
+- a{3,} 3 or more of a
+- a{2,4} between 2 or 4 of a: aa, aaa, or aaaa (min , max)
+- ^ The begning of a line
+- $ The end of a line
+- * Matches zero or more occurrences
+- + Matches one or more occurrences
+- ? Matches zero or one occurence
+- [] Matches characters in brackets
+- [^ ] Matches characters NOT in bracket
+- () group
