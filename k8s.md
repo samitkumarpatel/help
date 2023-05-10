@@ -1,4 +1,5 @@
 # k8s
+- [shopd](https://github.com/jpetazzo/shpod) is a good tool to deal with k8s.
 
 delete dangling replicaset
 
