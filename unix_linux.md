@@ -277,3 +277,10 @@ sudo kill -9 <port>
 
 ### watch ###
 - `watch -n 5 <command>` - run the <command> in each 5 sec.
+
+### netstat ###
+This command will list all the tcp and udp port with pid and other stuff. after that you can use kill commaond `kill -9 <pid>`
+```sh
+netstat -vanp tcp | grep 8080 # for mac
+netstat -tunlp # for unix/linux
+```
