@@ -139,8 +139,11 @@ the process file extensation is .pid
  # will search the search string in the (.) dir or current directory
  * grep -r 'search string' . 
  
-### other ###
- * nc -zvv localhost 27017 -  ping from command line
+### nc (netcat) ###
+- This tools allow you to intercept http request for debug purpose , To know more [https://www.computerhope.com/unix/nc.htm](https://www.computerhope.com/unix/nc.htm)
+
+ - `nc -zvv localhost 27017` -  ping from command line
+ -  `nc -l 8080` - will listen on port 8080
 ### size of the disk and folder 
  * du -shx * - will show all folder size in destination in GB/MB
  * df -h - will show the disk space
@@ -271,3 +274,6 @@ sudo lsof -i -P -n | grep LISTEN
 #if you want to kill a port
 sudo kill -9 <port>
 ```
+
+### watch ###
+- `watch -n 5 <command>` - run the <command> in each 5 sec.
