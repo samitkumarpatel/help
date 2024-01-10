@@ -1,0 +1,4 @@
+# domain name
+
+TXT 
+MX
