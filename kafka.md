@@ -1,4 +1,6 @@
-### Offset reset
+
+
+### Offset reset [If you somehow looses the message and acknowledge it mistakenly]
 
 A `config_file.config` need to have this details
 
