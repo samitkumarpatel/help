@@ -5,9 +5,8 @@
 # will search the process id for port 8080
 lsof -n -i4TCP:8080
 
-# see all
-netstat -tulpn
-netstat -tulpn | grep 8080
+# Find a LISTEN port
+lsof -i -P | grep LISTEN | grep :5001
 
 # Kill a process
 kill -9 processId
