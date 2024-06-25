@@ -21,3 +21,6 @@ see the event
 ```
 kubectl get event
 ```
+### Ingress DNS mappingn with external ingress
+
+external-dns controller will help for this
