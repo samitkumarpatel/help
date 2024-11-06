@@ -5,6 +5,7 @@
 - Web Security
   - [web security layers](./web-security-layers.md)
   - [ssl & tls](./ssl-tls.md)
+  - [JWT](./jwt_jwk_*.md)
  
 - DevOps
   - [Terraform](./terraform.md)
