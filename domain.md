@@ -1,4 +1,0 @@
-# domain name
-
-TXT 
-MX
