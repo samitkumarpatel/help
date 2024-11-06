@@ -74,4 +74,4 @@ These are the supported record type with their purpose
 - **CAA Records**: Control which CAs can issue certificates for your domain, enhancing security.
 
 
-  
+[back](./README.md)
