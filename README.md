@@ -1,2 +1,2 @@
 # knowledge-base
-ref knowledge for me, which can help other as well
+- [dns](./dns.md)
