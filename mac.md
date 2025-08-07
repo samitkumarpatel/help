@@ -12,7 +12,16 @@ lsof -i -P | grep LISTEN | grep :5001
 kill -9 processId
 ```
 
+***find all occupied port in Mac***
+```sh
+all_occupied_ports='netstat -vanp tcp'
+```
+
 # quarantine a file
 ```sh
 sudo xattr -r -d com.apple.quarantine ~/Tools/path/to/the/folder
 ```
+
+#Find Wifi Password connected in Mac
+
+security find-generic-password -ga "Wifi Name" | grep "password:"
