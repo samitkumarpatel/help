@@ -2,6 +2,6 @@
 
 Use 
 
-- [netshoot](https://github.com/nicolaka/netshoot) docker image or
+- [netshoot](https://github.com/nicolaka/netshoot).
 - [shpod](https://github.com/jpetazzo/shpod)
 - [alpine/curl](https://hub.docker.com/r/alpine/curl)

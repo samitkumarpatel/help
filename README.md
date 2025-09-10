@@ -1,4 +1,4 @@
-# Knowledge-base / Reference.
+# knowledge-base / reference.
 - a
   - [azure](./cloud/azure.md).
   - [aks](./cloud/aks.md).
@@ -63,7 +63,7 @@
     - [Mac Tips](./os/mac.md).
     - [Linux command / Tips](./os/unix_linux.md).
   - Observibility
-    - [lgtm | alloy](https://github.com/samitkumarpatel/observability).
+    - [lgtm \ alloy](https://github.com/samitkumarpatel/observability).
 - p 
   - Programming
     - [Java]().
