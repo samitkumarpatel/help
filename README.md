@@ -71,7 +71,8 @@
     - [Linux command / Tips](./os/unix_linux.md).
   - Observibility
     - [lgtm \ alloy](https://github.com/samitkumarpatel/observability).
-- p 
+- p
+  - [PKI - Public Key Infrastructure](https://github.com/samitkumarpatel/pki/blob/main/README.md)
   - Programming
     - [Java]().
       - [Spring Overview](https://github.com/samitkumarpatel/spring-framework-overview/blob/main/README.md).
@@ -91,7 +92,7 @@
     - [tmux](./shortcut-key/tmux.md).
     - [logitec](./shortcut-key/logitech.md).
   - ssl/tls
-    - [what is ssl ?](https://github.com/samitkumarpatel/ssl-info/blob/main/README.md).
+    - [what is PKI or ssl/tls ?](https://github.com/samitkumarpatel/pki/blob/main/README.md).
     - [letsencrypt](https://github.com/samitkumarpatel/lets-encrypt/blob/main/README.md).
     - [certmanager]().
   - [svn](./svn-git-migration.md).
