@@ -7,6 +7,7 @@
     - [google-adk](google-adk).
     - [spring-ai](https://github.com/samitkumarpatel/spring-ai-all-in-one/blob/main/README.md).
 - b
+
 - c
   - cloud
     - [azure](./cloud/azure.md).
@@ -58,11 +59,12 @@
 - n
 
 - o
+  - [oauth2](https://datatracker.ietf.org/doc/html/rfc6749)
   - [oauth2](https://github.com/samitkumarpatel/spring-oauth2-authorization-server/blob/main/README.md).
     - [jwt/jwk](./oauth2/jwt_jwk_*.md).
-    - [pkace](.).
-    - [oauth2-client](.).
-    - [oauth2-resource-server](.).
+    - [pkace/ooauth2 for browserbased application](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-10).
+    - [oauth2-client]().
+    - [oauth2-resource-server]().
 
   - OS
     - [Mac Tips](./os/mac.md).
@@ -89,8 +91,9 @@
     - [tmux](./shortcut-key/tmux.md).
     - [logitec](./shortcut-key/logitech.md).
   - ssl/tls
+    - [what is ssl ?](https://github.com/samitkumarpatel/ssl-info/blob/main/README.md).
     - [letsencrypt](https://github.com/samitkumarpatel/lets-encrypt/blob/main/README.md).
-    - [certmanager](..).
+    - [certmanager]().
   - [svn](./svn-git-migration.md).
 - t
   - tools
