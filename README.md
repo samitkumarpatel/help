@@ -47,6 +47,9 @@
 
 - k
   - [k8s](https://github.com/samitkumarpatel/k8s/blob/main/README.md).
+    - [cert-manager](https://youtu.be/LGY5aWQzXws?si=-6AfboLc7fF-Xw4X).
+    - [external-dns](https://youtu.be/wLHegOz_aR4?si=VVaSA92Fg2Ht-olZ).
+    - [ingress-controller](https://youtu.be/ZFABsUCMESU?si=GvyK3iniA7HfMUsS).
   - [k8s-local-infra](https://github.com/samitkumarpatel/k8s-local-infra).
   - [kafka](https://github.com/samitkumarpatel/kafka/blob/main/README.md).
 
