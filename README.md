@@ -51,9 +51,16 @@
   - [k8s](https://github.com/samitkumarpatel/k8s/blob/main/README.md).
     - [cert-manager](https://youtu.be/LGY5aWQzXws?si=-6AfboLc7fF-Xw4X).
     - [external-dns](https://youtu.be/wLHegOz_aR4?si=VVaSA92Fg2Ht-olZ).
-    - [ingress-controller](https://youtu.be/ZFABsUCMESU?si=GvyK3iniA7HfMUsS).
+    - [ingress-controller Video Ref](https://youtu.be/ZFABsUCMESU?si=GvyK3iniA7HfMUsS).
+    - [nginx - Ingress controller - K8S](https://github.com/kubernetes/ingress-nginx).
+    - [nginx - Ingress controller - f5](https://docs.nginx.com/nginx-ingress-controller/).
     - [bank vault](https://bank-vaults.dev/docs/mutating-webhook/configuration/).
     - [external-secrets](https://external-secrets.io/latest/).
+    - [kuma - service mesh](https://kuma.io/).
+    - [kong - service mesh](https://konghq.com/).
+    - [kubernetes - Gateway](https://gateway-api.sigs.k8s.io/).
+    - [kong - Gateway](https://developer.konghq.com/gateway/).
+    - [Traefik- Gateway](https://doc.traefik.io/traefik/reference/install-configuration/providers/kubernetes/kubernetes-gateway/)
   - [k8s-local-infra](https://github.com/samitkumarpatel/k8s-local-infra).
   - [kafka](https://github.com/samitkumarpatel/kafka/blob/main/README.md).
 
