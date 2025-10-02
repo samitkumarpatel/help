@@ -116,6 +116,8 @@
     - [svn](./svn-git-migration.md).
     - [jenkins]().
     - [lgtm](https://github.com/samitkumarpatel/observability).
+  - [Types of Testing in SDLC](./testing/sdlc-testing.md)
+
 - u
 - v
 - w
