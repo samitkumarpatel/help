@@ -62,6 +62,7 @@
     - [kong - Gateway](https://developer.konghq.com/gateway/).
     - [Traefik- Gateway](https://doc.traefik.io/traefik/reference/install-configuration/providers/kubernetes/kubernetes-gateway/).
     - [kube-state-metrics - Observability](https://github.com/kubernetes/kube-state-metrics/blob/main/docs/metrics/workload/deployment-metrics.md)
+    - [k9s](./k9s/readme.md).
   - [k8s-local-infra](https://github.com/samitkumarpatel/k8s-local-infra).
   - [kafka](https://github.com/samitkumarpatel/kafka/blob/main/README.md).
 
