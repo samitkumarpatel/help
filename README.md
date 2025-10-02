@@ -22,7 +22,7 @@
 
   - DevOps
     - [Terraform](./terraform.md).
-    - [Ansible](./ansible.md)  || [pdf tutorial](./ansible.pdf).
+    - [Ansible](./ansible.md) , [pdf tutorial](./ansible.pdf).
     - [Weblogic automation](./weblogic.md).
 
   - Docker

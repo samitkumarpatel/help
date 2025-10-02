@@ -13,7 +13,8 @@ k9s -c deployment # will oopen in deployment view.
 
 ### shortcuts
 
-after `k9s` default view , you can use 
+After `k9s` command - It will bring you a command like UI interface, then you can use below keys to interest with different area: 
     
-    - `/` - for search
-    - `:` - switch to different resources like pod, deployment, services, ingress
+- `/` - for search in any resource.
+
+- `:` - switch to different resources like pod, deployment, services, ingress
